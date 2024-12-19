@@ -1,6 +1,7 @@
 package com.JorgeRosas.SB1.controllers;
 
 import com.JorgeRosas.SB1.domain.Product;
+import com.JorgeRosas.SB1.service.ProductService;
 import com.JorgeRosas.SB1.service.ProductsServiceImpl;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -13,7 +14,7 @@ import java.util.List;
 @RequestMapping("/products")
 public class ProductController {
 
-    ProductsServiceImpl productsService = new ProductsServiceImpl();
+    ProductService productsService = new ProductsServiceImpl();
 
     @GetMapping
     public ResponseEntity<?> getProductsList(){
