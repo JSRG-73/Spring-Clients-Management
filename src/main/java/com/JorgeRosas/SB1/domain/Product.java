@@ -6,6 +6,9 @@ public class Product {
     private String name;
     private Double price;
 
+    public Product(){
+        
+    }
 
     public Product(Integer ID, String name, Double price, Integer stock) {
         this.ID = ID;
