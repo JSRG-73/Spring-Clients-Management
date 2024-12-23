@@ -1,14 +1,23 @@
 package com.JorgeRosas.SB1.service;
 
 import com.JorgeRosas.SB1.domain.Product;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Service("listResourceService")
+//@Service("listResourceService")
+@Lazy
+@Service
+@ConditionalOnProperty(name = "service.products", havingValue = "list")
 public class ProductsServiceImpl implements ProductService{
+
+    public ProductsServiceImpl(){
+        System.out.println("Instance of ProductServiceImpl");
+    }
 
     List<Product> products = new ArrayList<>(Arrays.asList(
             new Product(1, "Laptop", 799.99, 10),
