@@ -57,6 +57,5 @@ public class ExternalizedConfigurations {
                 + "\nauthor= " + this.author
                 + "\nlanguage= " + this.language
                 + "\ncountry= " + this.country;
-
     }
 }
