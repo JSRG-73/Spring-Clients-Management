@@ -46,5 +46,29 @@
     "price": 129.99,
     "stock": 18,
     "id": 8
+  },
+  {
+    "name": "Gaming Mouse",
+    "price": 59.99,
+    "stock": 40,
+    "id": 9
+  },
+  {
+    "name": "Webcam",
+    "price": 89.99,
+    "stock": 22,
+    "id": 10
+  },
+  {
+    "name": "Portable Speaker",
+    "price": 119.99,
+    "stock": 25,
+    "id": 11
+  },
+  {
+    "name": "Flash Drive",
+    "price": 19.99,
+    "stock": 100,
+    "id": 12
   }
 ]
